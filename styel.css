@@ -1,0 +1,216 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/* navigation bar: logo and image */
+#logo{
+  margin: 10px 34px;
+}
+#logo img{
+    height: 56px;
+    margin: 34px 6px;
+    border-radius: 36px;
+}
+
+/* navigation bar: list styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_960_720.jpg') no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .h-primary center{
+    font-size: 67px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Courier New', Courier, monospace;
+}
+#services-container::before{
+    content: "";
+    position: absolute;
+    background: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80')no-repeat center center/cover;
+    height: 786px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* clients section */
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('img/bg.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('img/contact.jpg') no-repeat center
+    center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9xp 20px;
+}
+
+/* unility classes */
+.h-secondary{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    /* font-size: 67px; */
+}
